@@ -1,0 +1,39 @@
+/* _buttons.less contains all styles for buttons across the website */
+.button {
+  @extend .normal;
+  @extend .uppercase;
+  font-size: 1.4rem;
+  padding: 8px 20px;
+  .lead{
+    @extend .white;
+    background-color:@signup-green;
+  }
+  .learn{
+    font-color:@darkest-gray;
+    background-color:@white;
+    border:2px solid @mediumteal;
+    &:hover{
+        background-color:@mediumteal;
+        .white
+    }
+  }
+  .leave{
+    @extend .white;
+    background-color:@mustard;
+  }
+  .button_tiny,
+  .small,
+  .button_small {
+    font-size: 1rem;
+    padding: 4px 15px;
+  }
+  .large,
+  .button_large{
+    font-size: 1.6rem;
+    padding: 16px 35px 16px 30px;
+  }
+  &:hover{
+    background-color: darken(10%);
+  }
+}
+

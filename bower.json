@@ -14,8 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
     "jquery": "~2.1.4",
-    "prism": "~1.4.1"
+    "bootstrap": "^3.3.6"
   }
 }

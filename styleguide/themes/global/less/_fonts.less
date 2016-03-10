@@ -1,0 +1,54 @@
+body, p{
+  .normal;
+  .dark-grey;
+  font-family: @copy;
+  .left;
+}
+
+h1, h2, h3 {
+  font-family:@heading;
+  .uppercase;
+  .normal;
+  .dark-grey;
+  .left;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: 10px 0;
+}
+
+h4, h5, h6 {
+  font-family: @subhead;
+  .left;
+}
+
+h4 {
+  .rackspace-red;
+}
+
+h5 {
+  .dark-grey;
+}
+
+
+a {
+  color: @light-grey;
+  .no-text-decoration;
+  line-height: 19px;
+  .semi-bold;
+  &:hover, &:active, &:visited{
+      text-decoration: underline;
+      color: @bright-blue;
+    }
+}
+
+

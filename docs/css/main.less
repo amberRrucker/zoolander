@@ -1,7 +1,31 @@
 @import '../_sass/rsweb-font-style';
+@import '../../themes/global/scss/_swatch.less';
+@import '../../themes/global/scss/_modifiers.less';
+@import '../../themes/global/scss/_fonts.less';
+@import '../../themes/global/scss/_buttons.less';
 
-body {
-  margin-top: 60px;
+
+.wrapper
+{
+    min-height:100%;
+    width:100%;
+    position:relative;
+    display:inline-block;
+}
+.sidebar
+{
+    width:20%;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    position:absolute;
+    background-color:$blue-gray;
+}
+.content
+{
+    width:80%;
+    position:relative;
+    float:right;
 }
 
 .highlight {

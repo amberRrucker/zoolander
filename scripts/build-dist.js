@@ -50,7 +50,7 @@ var harpCallback = function (err, results) {
   var copyCompiledTheme  = function (theme, callback) {
     console.log(randomMessage(theme));
     var themeDir = themesDir + '/' + theme;
-    var cssPath = themeDir + '/scss/build.css';
+    var cssPath = themeDir + '/less/build.less';
     var distPath = __dirname + '/../dist/css/' + theme + '.css';
     fs.copy(cssPath, distPath, callback);
   }
