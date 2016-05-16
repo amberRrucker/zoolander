@@ -1,99 +1,128 @@
-.additional-resource {
+%icon {
+  @extend %white;
+  align-items: center;
   display: flex;
-  .icon{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-basis: 25%;
-      font-size: 3vw;
-      @extend .white;
-      font-family: FontAwesome;
-      &.pdf{
-        background-color:$rackspace-red;
-        &:after{
-          content: "\f1c1";
-        }
-      }
-      &.github{
-        background-color:$purple;
-        &:after{
-          content: "\f092";
-        }
-      }
-      &.support{
-        background-color:$darkteal;
-        &:after{
-          content: "\f0ad";
-        }
-      }
-      &.video{
-        background-color:$blue-gray;
-        &:after{
-          content: "\f16a";
-        }
-      }
-      &.case-study{
-        background-color:$steel-blue;
-        &:after{
-          content: "\f0f2";
-        }
-      }
-      &.news{
-        background-color:$mustard;
-        &:after{
-          content: "\f1ea";
-        }
-      }
-      &.api{
-        background-color:$dark-gray;
-        &:after{
-          content: "\f1c9";
-        }
-      }
-      &.rss{
-        background-color:$magento-orange;
-        &:after{
-          content: "\f143";
-        }
-      }
+  flex-basis: 25%;
+  font-family: FontAwesome;
+  font-size: 3vw;
+  justify-content: center;
+
+  &.pdf {
+    background-color: $rackspace-red;
+
+    &:after {
+      content: '\f1c1';
     }
-  .desc{
-    overflow:auto;
-    margin: 0px;
-    padding: 20px;
-    background-color:$white;
-    border: 1px solid $light-gray-white;
   }
-  .arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2vw;
-    background-color: $light-gray-white;
+
+  &.github {
+    background-color: $purple;
+
+    &:after {
+      content: '\f092';
+    }
   }
-  .row-eq-height{
-    margin:10px;
-    flex-grow: 2;
+
+  &.support {
+    background-color: $darkteal;
+
+    &:after {
+      content: '\f0ad';
+    }
   }
-  a{
-    width: 100%;
-    display: flex;
-    text-decoration:none;
+
+  &.video {
+    background-color: $blue-gray;
+
+    &:after {
+      content: '\f16a';
+    }
   }
-  &:hover{
-   .desc{
-    background-color: $light-gray-white;
+
+  &.case-study {
+    background-color: $steel-blue;
+
+    &:after {
+      content: '\f0f2';
+    }
+  }
+
+  &.news {
+    background-color: $mustard;
+
+    &:after {
+      content: '\f1ea';
+    }
+  }
+
+  &.api {
+    background-color: $dark-gray;
+
+    &:after {
+      content: '\f1c9';
+    }
+  }
+
+  &.rss {
+    background-color: $magento-orange;
+
+    &:after {
+      content: '\f143';
     }
   }
 }
 
-@media only screen and (max-width : 770px) {
-  .additional-resource {
-    .row-eq-height{
-      display:flex;
+%media-resource {
+  @media only screen and (max-width: 770px) {
+    .row-eq-height {
+      display: flex;
     }
-    .icon{
+
+    .icon {
       font-size: 2em;
     }
   }
 }
+
+.additional-resource {
+  @extend %media-resource;
+  display: flex;
+
+  .icon {
+    @extend %icon;
+  }
+
+  .desc {
+    background-color: $white;
+    border: 1px solid $light-gray-white;
+    margin: 0;
+    overflow: auto;
+    padding: 20px;
+  }
+
+  .arrow {
+    align-items: center;
+    background-color: $light-gray-white;
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+  }
+
+  .row-eq-height {
+    flex-grow: 2;
+    margin: 10px;
+  }
+
+  a {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  &:hover {
+    .desc {
+      background-color: $light-gray-white;
+    }
+  }
+}
+

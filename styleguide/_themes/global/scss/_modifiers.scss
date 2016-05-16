@@ -2,33 +2,62 @@ $full-width: 100%;
 
 img { max-width: 100%; }
 
-/* Layout */
-.full-width { width: $full-width; }
-.no-margin { margin: 0 !important; }
-.no-padding { padding: 0; }
-.half-padding{ padding: 20px 15px 30px 15px; }
-.half-padding-full{padding: 20px 0px 30px 0px;}
-.half-padding-top { padding-top: 20px; }
-.standard-padding { padding: 40px 15px 60px 15px; }
-.no-side-padding {
+// Layout
+%full-width { width: $full-width; }
+%no-margin { margin: 0; }
+%no-padding { padding: 0; }
+%half-padding { padding: 20px 15px 30px; }
+%half-padding-full { padding: 20px 0 30px;}
+%half-padding-top { padding-top: 20px; }
+%standard-padding { padding: 40px 15px 60px; }
+
+%no-side-padding {
   padding-left: 0;
   padding-right: 0;
 }
-.standard-padding-full{
-  @extend .standard-padding;
-  @extend .no-side-padding;
+
+.full-width { @extend %full-width; }
+.no-margin { @extend %no-margin; }
+.no-padding { @extend %no-padding; }
+.half-padding { @extend %half-padding; }
+.half-padding-full { @extend %half-padding-full; }
+.half-padding-top { @extend %half-padding-top; }
+.standard-padding { @extend %standard-padding; }
+
+.no-side-padding { @extend %no-side-padding; }
+
+.standard-padding-full {
+  @extend %standard-padding;
+  @extend %no-side-padding;
 }
 
-/* Text Alignments */
-.centered, .center { text-align: center !important; }
-.left { text-align: left; }
-.right { text-align: right; }
-.uppercase { text-transform: uppercase; }
+// Text Alignments
+%center { text-align: center; }
+%left { text-align: left; }
+%right { text-align: right; }
+%uppercase { text-transform: uppercase; }
 
-/*Text Colors*/
-.medium-teal {color:$mediumteal;}
-.white {color:$white;}
-.red{color:$rackspace-red;}
-.black {color:$black;}
-.darkest-gray{color:$darkest-gray;}
-.blue-gray{color:$blue-gray;}
+// Text Colors
+%medium-teal { color: $mediumteal; }
+%white { color: $white; }
+%red { color: $rackspace-red; }
+%black { color: $black; }
+%darkest-gray { color: $darkest-gray; }
+%blue-gray { color: $blue-gray; }
+
+.centered,
+.center {
+  @extend %center;
+}
+
+.left { @extend %left; }
+.right { @extend %right; }
+.uppercase { @extend %uppercase; }
+
+// Text Colors
+.medium-teal {@extend %mediumteal; }
+.white { @extend %white; }
+.red { @extend %rackspace-red; }
+.black { @extend %black; }
+.darkest-gray { @extend %darkest-gray; }
+.blue-gray { @extend %blue-gray; }

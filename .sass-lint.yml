@@ -1,0 +1,10 @@
+files:
+  include: 'styleguide/**/*.scss'
+  ignore:
+    - 'styleguide/_sass/_rsweb-font-style.scss'
+    - 'styleguide/_sass/_syntax-highlighting.scss'
+    - 'styleguide/_themes/derek/scss/components/_rsweb-font-style.scss'
+    - 'styleguide/_themes/global/scss/_bootstrap-variables.scss'
+    - 'styleguide/_themes/global/scss/mixins/*.scss'
+rules:
+  no-url-protocols: 0

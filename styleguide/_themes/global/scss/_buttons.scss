@@ -1,71 +1,85 @@
-/* the button class can be used for both anchor and input tags, defaults to medium/gray */
+// the button class can be used for both anchor and input tags, defaults to medium/gray
 .button {
-  @extend .semi-bold;
-  @extend .uppercase;
-  @extend .center;
-  border-radius: 0px;
-  padding: 15px 20px;
-  width:100%;
-  text-decoration:none;
-  font-size: .85em;
-  box-shadow: none;
-  border: none;
+  @extend %uppercase;
+  @extend %center;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0;
   cursor: pointer;
-  display:inline-block;
-  &:hover{
+  display: inline-block;
+  font-size: .85em;
+  font-weight: 600;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
     text-decoration: none;
   }
-}
 
-.banner .button{
-  background: transparent;
-  color: $white;
-}
+  &.lead {
+    @extend %white;
+    background-color: $signup-green;
 
-.subnav .button{
-  padding: 8px 15px;
-}
+    &:hover {
+      @extend %white;
+      background-color: lighten($signup-green, 5%);
+    }
+  }
 
-.button.lead {
-  @extend .white;
-  background-color: $signup-green;
-  &:hover {
-    background-color: lighten($signup-green, 5%);
-    @extend .white;
+  &.leaving {
+    @extend %white;
+    background-color: $mustard;
+
+    &:hover {
+      @extend %white;
+      background-color: lighten($mustard, 5%);
+    }
+  }
+
+  &.learning {
+    background: $white;
+    border: 3px solid $mediumteal;
+    color: $dark-gray;
+    padding: 12px 20px;
+
+    &:hover {
+      @extend %white;
+      background-color: $mediumteal;
+    }
   }
 }
 
-.button.leaving {
-  @extend .white;
-  background-color: $mustard;
-  &:hover {
-    background-color: lighten($mustard, 5%);
-    @extend .white;
+.banner {
+  %learning {
+    @extend %white;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $mediumteal;
+    }
+  }
+
+  .button {
+    background: transparent;
+    color: $white;
+
+    &.learning {
+      @extend %learning;
+    }
   }
 }
 
-.button.learning {
-  border: 3px solid $mediumteal;
-  padding: 12px 20px;
-  background: $white;
-  color: #333;
-  &:hover{
-    background-color: $mediumteal;
-    @extend .white;
+.subnav {
+  .button {
+    padding: 8px 15px;
   }
 }
 
-.banner .button.learning{
-  background-color:transparent;
-  @extend .white;
-  &:hover{
-    background-color: $mediumteal;
-  }
-}
+.cta {
+  @extend %center;
 
-.cta{
-  @extend .center;
-  & > a{
-    @extend .button
+  & > a {
+    @extend %button
   }
 }

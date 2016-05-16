@@ -1,0 +1,49 @@
+%resource-img-hover {
+  &.hover { display: inline-block; }
+}
+
+.resource {
+  background-color: $white;
+  border-top: 12px solid $bright-green;
+  margin: 10px;
+  overflow: auto;
+  padding: 20px 20px 5px;
+  position: relative;
+
+  a {
+    @extend %semi-bold;
+    color: $medium-dark-gray;
+    margin-top: 1em;
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $bright-green;
+    border-top: 12px solid $resource-hover-border;
+
+    a {
+      @extend %white;
+      text-decoration: none;
+    }
+
+    h6,
+    h3 {
+      @extend %white;
+    }
+
+    img {
+      @extend %resource-img-hover;
+      display: none;
+    }
+  }
+
+  img {
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 10px;
+    width: 60px;
+
+    &.hover { display: none; }
+  }
+}

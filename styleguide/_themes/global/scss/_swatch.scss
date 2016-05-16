@@ -1,7 +1,7 @@
 //Path to CDN
-$images: "https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com";
+$images: 'https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com';
 
-//Colors
+//colors
 $white: #fff;
 $light-gray-white: #efefef;
 $bright-gray: #f2f5f5;
@@ -13,15 +13,16 @@ $darkest-gray: #2a2a2a;
 $blue-gray: #2e3238;
 $black: #000;
 
-$decision-engine-blue: #3295E3;
+$decision-engine-blue: #3295e3;
 $bright-blue: #0071db;
 $light-blue: #09c2e5;
 $steel-blue: #007295;
-$teal: #00ffff;
-$mediumteal: #0DCFD9;
-$darkteal: #00B4C3;
+$teal: #0ff;
+$mediumteal: #0dcfd9;
+$darkteal: #00b4c3;
+$cloud-and-tech-aqua: #385d75;
 
-$bright-red: #cc0000;
+$bright-red: #c00;
 $rackspace-red: #c40022;
 
 $bright-green: #23cd69;
@@ -32,3 +33,29 @@ $mustard: #f6b100;
 
 $active: #00a96d;
 $inactive: #ccc;
+
+$code-background: #3b3f45;
+$code-color: #e0e0d7;
+
+$card-background: #fdfdfd;
+$card-border: #bfbfbf;
+$card-blue: #739eaf;
+
+$shadow: rgba(0, 0, 0, .25);
+
+$warning: #eb6800;
+$warning-background: rgba(235, 104, 0, .1);
+$error: #eb0022;
+$error-background: rgba(235, 0, 34, .1);
+$success: #008500;
+$success-background: rgba(0, 133, 0, .1);
+
+$techapp-background: rgba(0, 5, 10, .1);
+$customer-stories-logo-bg: rgba(0, 5, 10, .1);
+
+$resource-hover-border: rgba(0, 0, 0, .2);
+
+$navbar-color: #e0e0e0;
+
+$dropdown-green-active: #468b24;
+$dropdown-green: #5aaa28;

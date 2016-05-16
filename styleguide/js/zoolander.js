@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 
 
 jQuery(document).ready(function ($) {
-    $('#myTab').tabCollapse();
+    $('ul[role="tablist"]').tabCollapse();
     jQuery ('.title a').click(function (event) {
       jQuery (this).parent().parent().find('.fa-arrow-right').animate({  borderSpacing: +90 }, {
       step: function(now,fx) {
@@ -29,7 +29,6 @@ jQuery(document).ready(function ($) {
       duration:'slow'
       },'linear');
     });
-
     $('#footer-accordion').tabCollapse();
 
 });

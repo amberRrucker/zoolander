@@ -1,6 +1,112 @@
 {
   "compareConfig": {
-    "testPairs": []
+    "testPairs": [
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_0_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/0_0_body_0_tablet_v.png",
+        "selector": "body",
+        "fileName": "0_0_body_0_tablet_v.png",
+        "label": "/derek/examples/forms.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_1_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/0_0_body_1_tablet_h.png",
+        "selector": "body",
+        "fileName": "0_0_body_1_tablet_h.png",
+        "label": "/derek/examples/forms.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_2_full.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/0_0_body_2_full.png",
+        "selector": "body",
+        "fileName": "0_0_body_2_full.png",
+        "label": "/derek/examples/forms.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_body_0_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/1_0_body_0_tablet_v.png",
+        "selector": "body",
+        "fileName": "1_0_body_0_tablet_v.png",
+        "label": "/derek/examples/homepage.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_body_1_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/1_0_body_1_tablet_h.png",
+        "selector": "body",
+        "fileName": "1_0_body_1_tablet_h.png",
+        "label": "/derek/examples/homepage.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_body_2_full.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/1_0_body_2_full.png",
+        "selector": "body",
+        "fileName": "1_0_body_2_full.png",
+        "label": "/derek/examples/homepage.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_body_0_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/2_0_body_0_tablet_v.png",
+        "selector": "body",
+        "fileName": "2_0_body_0_tablet_v.png",
+        "label": "/derek/examples/landing-page.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_body_1_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/2_0_body_1_tablet_h.png",
+        "selector": "body",
+        "fileName": "2_0_body_1_tablet_h.png",
+        "label": "/derek/examples/landing-page.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_body_2_full.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/2_0_body_2_full.png",
+        "selector": "body",
+        "fileName": "2_0_body_2_full.png",
+        "label": "/derek/examples/landing-page.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_body_0_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/3_0_body_0_tablet_v.png",
+        "selector": "body",
+        "fileName": "3_0_body_0_tablet_v.png",
+        "label": "/derek/examples/office365.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_body_1_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/3_0_body_1_tablet_h.png",
+        "selector": "body",
+        "fileName": "3_0_body_1_tablet_h.png",
+        "label": "/derek/examples/office365.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_body_2_full.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/3_0_body_2_full.png",
+        "selector": "body",
+        "fileName": "3_0_body_2_full.png",
+        "label": "/derek/examples/office365.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_body_0_tablet_v.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/4_0_body_0_tablet_v.png",
+        "selector": "body",
+        "fileName": "4_0_body_0_tablet_v.png",
+        "label": "/derek/examples/solutions.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_body_1_tablet_h.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/4_0_body_1_tablet_h.png",
+        "selector": "body",
+        "fileName": "4_0_body_1_tablet_h.png",
+        "label": "/derek/examples/solutions.html"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_body_2_full.png",
+        "test": "../../backstop_data/bitmaps_test/20160602-163234/4_0_body_2_full.png",
+        "selector": "body",
+        "fileName": "4_0_body_2_full.png",
+        "label": "/derek/examples/solutions.html"
+      }
+    ]
   },
   "lastConfigHash": "b35380960e85d5e4339e052daacd4151f6254a99"
 }

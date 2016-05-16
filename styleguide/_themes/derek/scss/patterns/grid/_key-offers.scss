@@ -1,0 +1,35 @@
+.offer-box {
+  background: $white;
+  background-clip: padding-box;
+  margin: 10px;
+  padding: 25px;
+
+  p {
+    line-height: 1.7em;
+    padding-bottom: 10px;
+  }
+
+  .bottom {
+    i {
+      bottom: 0;
+      float: right;
+      height: 50px;
+      position: absolute;
+      right: 15px;
+      width: 50px;
+    }
+
+    p {
+      bottom: 0;
+      float: left;
+      left: 25px;
+      padding-bottom: 0;
+      position: absolute;
+    }
+  }
+
+  .rsweb {
+    color: $medium-gray;
+    font-size: 3em;
+  }
+}

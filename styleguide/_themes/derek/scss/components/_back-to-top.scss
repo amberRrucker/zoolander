@@ -1,45 +1,55 @@
-.rug-to-top{
-  background-color:$darkteal;
-  @extend .half-padding;
-  @extend .center;
-  a{
-    @extend h4;
-    @extend .white;
-    @extend .center;
-    text-decoration:none;
-    &:hover, &:visited, &:focus{
-      @extend .white;
-      text-decoration:none;
+.rug-to-top {
+  @extend %half-padding;
+  @extend %center;
+  background-color: $darkteal;
+
+  a {
+    @extend %subheading;
+    @extend %white;
+    @extend %center;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      @extend %white;
+      text-decoration: none;
     }
-    i{
-      font-size:1.5em;
-      font-family:'fontAwesome';
-      @extend .white;
-      margin:10px 0px 0px 15px;
+
+    i {
+      @extend %white;
+      font-family: 'fontAwesome';
+      font-size: 1.5em;
+      margin: 10px 0 0 15px;
     }
   }
 }
 
-#top-link-desktop a{
-  background-color:$darkteal;
-  @extend .white;
-  @extend h4;
-  @extend .center;
-  text-decoration:none;
-  position: fixed;
-  bottom: 0;
-  right: 5px;
-  width: 35px;
-  padding: 0px;
-  height: 35px;
-  z-index: 100;
-  display: none;
-  &:hover, &:visited, &:focus{
-    @extend .white;
-  }
-  i{
-    font-size:1.1em;
-    padding-top:10px;
-    @extend .white;
+.top-link-desktop {
+  a {
+    @extend %white;
+    @extend %subheading;
+    @extend %center;
+    background-color: $darkteal;
+    bottom: 10px;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: fixed;
+    right: 5px;
+    text-decoration: none;
+    width: 35px;
+    z-index: 100;
+
+    &:hover,
+    &:focus {
+      @extend %white;
+    }
+
+    i {
+      @extend %white;
+      font-size: 1.9em;
+      padding-left: 6px;
+      padding-top: 5px;
+    }
   }
 }
