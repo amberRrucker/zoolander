@@ -51,8 +51,14 @@ $ceiling-font-size: 10px;
 }
 
 %menu-inline {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: -5px;
+  padding-left: 0;
+
   > li {
     border-right: 1px solid $darkest-gray;
+    display: inline-block;
     margin: floor($ceiling-margin + 2) 0;
     padding: 0 floor($ceiling-margin + 2);
 
@@ -87,6 +93,14 @@ $ceiling-font-size: 10px;
       background-color: $medium-gray;
       margin: 0;
 
+      &.dropdown-green {
+        background-color: $dropdown-green;
+
+        &:hover {
+          background-color: $dropdown-green-hover;
+        }
+      }
+
       &:hover,
       &:focus,
       &:active {
@@ -119,4 +133,3 @@ $ceiling-font-size: 10px;
     max-width: $full-width;
   }
 }
-
