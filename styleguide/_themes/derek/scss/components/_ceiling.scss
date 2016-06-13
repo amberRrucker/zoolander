@@ -95,8 +95,11 @@ $ceiling-font-size: 10px;
 
       &.dropdown-green {
         background-color: $dropdown-green;
+        a { background-color: $dropdown-green; }
 
-        &:hover {
+        &:active,
+        &:hover,
+        &:focus {
           background-color: $dropdown-green-hover;
         }
       }
@@ -114,11 +117,14 @@ $ceiling-font-size: 10px;
       border-radius: 0;
       font-size: $ceiling-font-size;
 
-      &:hover,
-      &:focus,
-      &:active {
+      &:hover {
         @extend %white;
         background-color: lighten($medium-gray, 5%);
+      }
+
+      &:focus,
+      &:active {
+        background-color: $dropdown-light-gray;
       }
     }
   }
