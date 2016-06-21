@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'sass-lint' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose run-script [ 'presass-lint', 'sass-lint', 'postsass-lint' ]
+5 info presass-lint zoolander@0.5.2
+6 info sass-lint zoolander@0.5.2
+7 verbose unsafe-perm in lifecycle true
+8 info zoolander@0.5.2 Failed to exec sass-lint script
+9 verbose stack Error: zoolander@0.5.2 sass-lint: `sass-lint -v --max-warnings 0`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid zoolander@0.5.2
+11 verbose cwd /Users/ambe9565/code/zoolander
+12 error Darwin 15.4.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "sass-lint"
+14 error node v4.2.4
+15 error npm  v2.14.12
+16 error code ELIFECYCLE
+17 error zoolander@0.5.2 sass-lint: `sass-lint -v --max-warnings 0`
+17 error Exit status 1
+18 error Failed at the zoolander@0.5.2 sass-lint script 'sass-lint -v --max-warnings 0'.
+18 error This is most likely a problem with the zoolander package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     sass-lint -v --max-warnings 0
+18 error You can get their info via:
+18 error     npm owner ls zoolander
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

@@ -55,7 +55,7 @@ img { max-width: 100%; }
 .uppercase { @extend %uppercase; }
 
 // Text Colors
-.medium-teal {@extend %mediumteal; }
+.medium-teal {@extend %medium-teal; }
 .white { @extend %white; }
 .red { @extend %red; }
 .black { @extend %black; }
