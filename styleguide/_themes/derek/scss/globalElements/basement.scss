@@ -15,8 +15,9 @@
 }
 
 // Basement Classes
-.basement {
-  padding: 10px 15px;
+.basement-container {
+  @include make-container;
+  padding: 10px 0;
 }
 
 .basement-copyright {
