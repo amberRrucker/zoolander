@@ -58,10 +58,13 @@
 .resource-descWrapper {
   @include make-xs-column(12);
   margin-top: 15px;
+  padding-bottom: 25px;
 }
 
 .resource-linkWrapper {
-  @include make-xs-column(12);
+  bottom: 5px;
+  padding: 0 25px 10px;
+  position: absolute;
 }
 
 .resource-link {
@@ -80,6 +83,7 @@
 .resource-condensedDescRow {
   display: flex;
   margin-top: auto;
+  padding-bottom: 25px;
 }
 
 @media only screen and (max-width: $screen-sm-max) {
